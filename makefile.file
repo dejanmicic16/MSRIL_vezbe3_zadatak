@@ -1,0 +1,9 @@
+all: zad1
+zad1: main.o main.o
+gcc -o zad1 main.o main.o
+calculate.o: main.c main.h
+gcc -c main.c
+helper.o: main.c main.h
+gcc -c main.c
+clean:
+rm -f main *.o  
